@@ -27,8 +27,8 @@ dnf5 install -y \
     tmux 
 
 # Helium needs to be special doesn't it
-dnf copr enable imput/helium
-dnf install -y helium-bin
+dnf4 copr enable imput/helium
+dnf4 install -y helium-bin
 
 # Use a COPR Example:
 #
