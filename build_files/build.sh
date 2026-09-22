@@ -13,7 +13,22 @@ cp -avf "/ctx/system_files"/. /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux
+dnf5 install -y \
+    flatpak \
+    git \
+    grim \
+    pipewire \
+    pipewire-pulseaudio \
+    waybar \
+    polkit \
+    playerctl \
+    pavucontrol \
+    NetworkManager \
+    tmux 
+
+# Helium needs to be special doesn't it
+dnf copr enable imput/helium
+dnf install -y helium-bin
 
 # Use a COPR Example:
 #
