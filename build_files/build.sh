@@ -26,9 +26,8 @@ dnf5 install -y \
     NetworkManager \
     tmux 
 
-# Helium needs to be special doesn't it
-dnf4 copr enable imput/helium
-dnf4 install -y helium-bin
+dnf5 -y copr enable imput/helium
+dnf5 -y install helium-bin
 
 # Use a COPR Example:
 #
